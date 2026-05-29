@@ -18,7 +18,7 @@ jobs:
               uses: imehedi/actions-awscli-v2@latest
               with:
                   args: "lambda update-function-code \
-                      --function-name arn:aws:lambda:ap-southeast-1:337909747571:function:RobloxProxy \
+                      --function-name arn:aws:lambda:us-east-1:337909747571:function:RobloxProxy \
                       --zip-file fileb://code.zip"
               env:
                   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
